@@ -1,112 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
 
-<body aria-hidden="false">
+  <body aria-hidden="false">
     <header>
-        <h1 id="header" class="header">MCQ QUIZ</h1>
-        <h2>Take a quiz based on the recent events in football</h2>
+      <h1 id="header" class="header">MCQ QUIZ</h1>
+      <h2>Take a quiz based on the recent events in football</h2>
     </header>
-    <div class="container">
-        <div class="row">
-            <form class="">
-                <section class="col-md-12">
-                    <h2 class="questions">1. Messi has __ number of golden boots.</h2>
-                    <div class="options p-4">
-                        <input type="radio" id="1A" name="question1" />
-                        <label for="1A" class="answer m-2"><h3>5</h3></label><br />
-                        <input type="radio" id="1B" name="question1" />
-                        <label for="1B" class="answer m-2"><h3>6</h3></label><br />
-                        <input type="radio" id="1C" name="question1" />
-                        <label for="1C" class="answer m-2"><h3>4</h3></label><br />
-                        <input type="radio" id="1D" name="question1" />
-                        <label for="1D" class="answer m-2"><h3>8</h3></label><br />
-                    </div>
-                </section>
-                <section class="col-md-12">
-                    <h2 class="questions">2. Who won the Ballon d'or 2021 ?</h2>
-                    <div class="options p-4">
-                        <input type="radio" id="2A" name="question2" />
-                        <label for="2A" class="answer m-2"><h3>Robert Lewandowski</h3></label
+    <div class="container" id="container">
+      <div class="all-sections">
+        <form id="form">
+          <section class="section" id="section1">
+            <h2 class="questions">1. Messi has __ number of golden boots.</h2>
+            <div class="options p-4" name="q1">
+              <input type="radio" id="1A" name="question1" value="5" />
+              <label for="1A" class="answer m-2"><h3>5</h3></label><br />
+              <input type="radio" id="1B" name="question1" value="7" />
+              <label for="1B" class="answer m-2"><h3>7</h3></label><br />
+              <input type="radio" id="1C" name="question1" value="4" />
+              <label for="1C" class="answer m-2"><h3>4</h3></label><br />
+              <input type="radio" id="1D" name="question1" value="8" />
+              <label for="1D" class="answer m-2"><h3>8</h3></label><br />
+            </div>
+          </section>
+          <section class="section" id="section2">
+            <h2 class="questions">2. Who won the Ballon d'or 2021 ?</h2>
+            <div class="options p-4" name="q2">
+              <input
+                type="radio"
+                id="2A"
+                name="question2"
+                value="Lewandowski"
+              />
+              <label for="2A" class="answer m-2"
+                ><h3>Robert Lewandowski</h3></label
               ><br />
-              <input type="radio" id="2B" name="question2" />
+              <input type="radio" id="2B" name="question2" value="Messi" />
               <label for="2B" class="answer m-2"><h3>Lionel Messi</h3></label
               ><br />
-              <input type="radio" id="2C" name="question2" />
+              <input type="radio" id="2C" name="question2" value="Ronaldo" />
               <label for="2C" class="answer m-2"
                 ><h3>Cristiano Ronaldo</h3></label
               ><br />
-              <input type="radio" id="2D" name="question2" />
+              <input type="radio" id="2D" name="question2" value="KDB" />
               <label for="2D" class="answer m-2"><h3>Kevin De Bruyne</h3></label
               ><br />
             </div>
           </section>
-          <section class="col-md-12">
+          <section class="section" id="section3">
             <h2 class="questions">
-              3. 2010-21 Champions league winner is _____.
+              3. 2020-21 Champions league winner is _____.
             </h2>
-            <div class="options p-4">
-              <input type="radio" id="3A" name="question3" />
+            <div class="options p-4" name="q3">
+              <input type="radio" id="3A" name="question3" value="Liverpool" />
               <label for="3A" class="answer m-2"><h3>Liverpool F.C</h3></label
               ><br />
-              <input type="radio" id="3B" name="question3" />
+              <input type="radio" id="3B" name="question3" value="Juventus" />
               <label for="3B" class="answer m-2"><h3>Juventus F.C</h3></label
               ><br />
-              <input type="radio" id="3C" name="question3" />
+              <input type="radio" id="3C" name="question3" value="Chelsea" />
               <label for="3C" class="answer m-2"><h3>Chelsea F.C</h3></label
               ><br />
-              <input type="radio" id="3D" name="question3" />
+              <input type="radio" id="3D" name="question3" value="ACM" />
               <label for="3D" class="answer m-2"><h3>A.C.Milan</h3></label
               ><br />
             </div>
           </section>
-          <section class="col-md-12">
+          <section class="section" id="section4">
             <h2 class="questions">4. How many teams in Premier League ?</h2>
-            <div class="options p-4">
-              <input type="radio" id="4A" name="question4" />
+            <div class="options p-4" name="q4">
+              <input type="radio" id="4A" name="question4" value="38" />
               <label for="4A" class="answer m-2"><h3>38</h3></label><br />
-                        <input type="radio" id="4B" name="question4" />
-                        <label for="4B" class="answer m-2"><h3>18</h3></label><br />
-                        <input type="radio" id="4C" name="question4" />
-                        <label for="4C" class="answer m-2"><h3>40</h3></label><br />
-                        <input type="radio" id="4D" name="question4" />
-                        <label for="4D" class="answer m-2"><h3>20</h3></label><br />
-                    </div>
-                </section>
-                <section class="col-md-12">
-                    <h2 class="questions">
-                        5. Who has the most International goals in football ?
-                    </h2>
-                    <div class="options p-4">
-                        <input type="radio" id="5A" name="question5" />
-                        <label for="5A" class="answer m-2"><h3>Lionel Messi</h3></label
+              <input type="radio" id="4B" name="question4" value="18" />
+              <label for="4B" class="answer m-2"><h3>18</h3></label><br />
+              <input type="radio" id="4C" name="question4" value="40" />
+              <label for="4C" class="answer m-2"><h3>40</h3></label><br />
+              <input type="radio" id="4D" name="question4" value="20" />
+              <label for="4D" class="answer m-2"><h3>20</h3></label><br />
+            </div>
+          </section>
+          <section class="section" id="section5">
+            <h2 class="questions">
+              5. Who has the most International goals in football ?
+            </h2>
+            <div class="options p-4" name="q5">
+              <input type="radio" id="5A" name="question5" value="Messi" />
+              <label for="5A" class="answer m-2"><h3>Lionel Messi</h3></label
               ><br />
-              <input type="radio" id="5B" name="question5" />
+              <input type="radio" id="5B" name="question5" value="Ronaldo" />
               <label for="5B" class="answer m-2"
                 ><h3>Cristiano Ronaldo</h3></label
               ><br />
-              <input type="radio" id="5C" name="question5" />
+              <input type="radio" id="5C" name="question5" value="Chhetri" />
               <label for="5C" class="answer m-2"><h3>Sunil Chhetri</h3></label
               ><br />
-              <input type="radio" id="5D" name="question5" />
+              <input type="radio" id="5D" name="question5" value="Pele" />
               <label for="5D" class="answer m-2"><h3>Pele</h3></label><br />
-                    </div>
-                </section>
-            </form>
-        </div>
-        <button id="submit" class="submit"><strong>Submit</strong></button>
+            </div>
+          </section>
+        </form>
+      </div>
+      <button id="submit" class="submit" onclick="getPoints()">
+        <strong>Submit</strong>
+      </button>
+      <!-- <div class="result" id="result"></div> -->
     </div>
 
     <script src="script.js" defer></script>
-</body>
-
+  </body>
 </html>
