@@ -6,6 +6,7 @@ function getPoints() {
   let qstn3 = $("input[name='question3']:checked").val();
   let qstn4 = $("input[name='question4']:checked").val();
   let qstn5 = $("input[name='question5']:checked").val();
+
   if (qstn1 === "7") {
     count++;
   }
@@ -24,12 +25,18 @@ function getPoints() {
 
   result.setAttribute("id", "result");
   document.getElementById("container").appendChild(result);
+
   if (count >= 4) {
-    result.innerHTML = "Yes, Your score is " + count;
-    console.log(count);
+    result.innerHTML = `<h1><strong>Congratulations!!</strong></h1>
+    <h1>Your score is <strong>${count}</strong></h1>`;
+    result.style.backgroundColor = "green";
   } else if (count == 2 || count == 3) {
-    result.innerHTML = "Maybe, Your score is " + count;
+    result.innerHTML = `<h1><strong>Better luck next time!</strong></h1>
+    <h1>Your score is <strong>${count}</strong></h1>`;
+    result.style.backgroundColor = "rgb(163, 157, 3)";
   } else {
-    result.innerHTML = "No, Your score is " + count;
+    result.innerHTML = `<h1><strong>You need to work more!!</strong></h1>
+    <h1>Your score is <strong>${count}</strong></h1>`;
+    result.style.backgroundColor = "red";
   }
 }
